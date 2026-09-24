@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumina Dental Studio | A Healthier Smile Starts Here</title>
+<meta name="description" content="Premium dental care: implants, whitening, root canal, aligners, crowns and preventive dentistry.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav">
+  <a class="logo" href="#home">Lumina Dental</a>
+  <nav class="links">
+    <a href="#home">Home</a><a href="#about">About</a><a href="#treatments">Treatments</a><a href="#doctors">Doctors</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a>
+    <a class="btn sm" href="#book">Book Appointment</a>
+  </nav>
+  <button class="burger" aria-label="Menu"><span></span><span></span></button>
+</header>
+<canvas id="c" aria-hidden="true"></canvas>
+<main>
+<section id="home" class="hero" data-t="2.3,-0.1,1.1,1" data-m="0,-1.6,0.8,1">
+  <div class="wrap"><div class="half wide">
+    <h1 class="rv">A HEALTHIER SMILE STARTS HERE.</h1>
+    <p class="lead rv">Gentle, precise and beautifully modern dentistry. We combine advanced technology with unhurried, personal care so every visit feels calm.</p>
+    <div class="row rv"><a class="btn" href="#book">Book Appointment</a><a class="btn o" href="#treatments">Explore Treatments</a></div>
+  </div></div>
+</section>
+
+<section id="about" data-t="-2.5,0,0.95,1" data-m="0,0,1,0.25">
+  <div class="wrap"><div class="half r">
+    <h2 class="rv">Dentistry designed around your comfort.</h2>
+    <p class="rv">Lumina Dental Studio is a modern clinic built for people who would rather not be at the dentist. Quiet rooms, digital scans instead of messy moulds, and clear explanations before every step.</p>
+    <p class="rv">Our team has cared for families for over fifteen years, from a child's first check-up to complete smile makeovers.</p>
+    <div class="stats rv"><div><b data-n="15" data-s="+">0</b><span>Years of care</span></div><div><b data-n="12000" data-s="+">0</b><span>Smiles treated</span></div><div><b data-n="4.9" data-d="1">0</b><span>Patient rating</span></div></div>
+  </div></div>
+</section>
+
+<section id="treatments" data-t="3.6,0.4,0.6,0.5">
+  <div class="wrap">
+    <h2 class="rv big">Treatments for every smile.</h2>
+    <div class="grid">
+      <article class="card rv"><h3>Dental Implants</h3><p>Permanent, natural-looking replacements for missing teeth, placed with digital precision.</p></article>
+      <article class="card rv"><h3>Teeth Whitening</h3><p>Safe in-clinic whitening that lifts years of stains in a single relaxed visit.</p></article>
+      <article class="card rv"><h3>Root Canal</h3><p>Comfortable, single-sitting treatment that saves your natural tooth and ends the pain.</p></article>
+      <article class="card rv"><h3>Braces &amp; Aligners</h3><p>Clear aligners and modern braces to straighten teeth discreetly and predictably.</p></article>
+      <article class="card rv"><h3>Dental Crowns</h3><p>Custom ceramic crowns matched to your natural shade for strength and beauty.</p></article>
+      <article class="card rv"><h3>Preventive Dentistry</h3><p>Check-ups, scaling and fluoride care that keep small problems from becoming big ones.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="lab" data-t="0,0.1,1.5,1" data-m="0,1,1.05,1">
+  <div class="wrap">
+    <h2 class="rv big center">See how each treatment works.</h2>
+    <p class="center rv sub">Choose a treatment and watch the tooth change.</p>
+    <div class="lab">
+      <div class="chips" role="tablist"></div>
+      <div class="stage"></div>
+      <div class="info"><h3 id="lt"></h3><p id="ld"></p><a class="btn sm" href="#book">Book this treatment</a></div>
+    </div>
+  </div>
+</section>
+
+<section id="why" data-t="-2.7,0,0.85,1" data-m="0,0,1,0.25">
+  <div class="wrap"><div class="half r">
+    <h2 class="rv">Why patients choose us.</h2>
+    <ul class="why">
+      <li class="rv"><h3>Pain-free by design</h3><p>Gentle anaesthesia and calm technique, so treatment feels easy.</p></li>
+      <li class="rv"><h3>Digital diagnosis</h3><p>Low-radiation 3D imaging shows you exactly what we see.</p></li>
+      <li class="rv"><h3>Clear, honest pricing</h3><p>A written estimate before we begin. No surprises, ever.</p></li>
+      <li class="rv"><h3>Hospital-grade sterilisation</h3><p>Every instrument is sealed and opened in front of you.</p></li>
+    </ul>
+  </div></div>
+</section>
+
+<section id="results" data-t="3.6,-0.3,0.6,0.5">
+  <div class="wrap">
+    <h2 class="rv big">Real change, drag to compare.</h2>
+    <div class="ba rv" style="--p:50%">
+      <div class="layer"><div class="teeth before"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <div class="layer after"><div class="teeth"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></div>
+      <span class="tag l">Before</span><span class="tag r">After</span>
+      <input type="range" min="0" max="100" value="50" aria-label="Compare before and after">
+    </div>
+    <p class="note rv">Illustration for demonstration. Results vary by patient.</p>
+  </div>
+</section>
+
+<section id="doctors" data-t="-3.7,0.3,0.5,0.4" data-m="0,0,1,0.2">
+  <div class="wrap">
+    <h2 class="rv big">Meet your dentists.</h2>
+    <div class="grid">
+      <article class="card doc rv"><div class="av">AR</div><h3>Dr. Ananya Rao</h3><p class="role">Lead Dental Surgeon, Implants &amp; Aesthetics</p><p>BDS, MDS. Fifteen years of restorative and cosmetic experience.</p></article>
+      <article class="card doc rv"><div class="av">RM</div><h3>Dr. Rohan Mehta</h3><p class="role">Endodontist</p><p>BDS, MDS. Specialist in gentle, single-visit root canal treatment.</p></article>
+      <article class="card doc rv"><div class="av">SI</div><h3>Dr. Sara Iyer</h3><p class="role">Orthodontist &amp; Paediatric Care</p><p>BDS, MDS. Clear aligners for adults and friendly care for children.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="testimonials" data-t="3.7,0,0.5,0.4" data-m="0,0,1,0.2">
+  <div class="wrap">
+    <h2 class="rv big">Words from our patients.</h2>
+    <div class="grid">
+      <blockquote class="card rv"><p>“I was terrified of root canals. Dr. Mehta explained everything and I felt nothing. I actually enjoyed the visit.”</p><cite>Priya S.</cite></blockquote>
+      <blockquote class="card rv"><p>“My aligners finished a month early and the results are better than I imagined. Beautiful clinic, wonderful team.”</p><cite>Daniel K.</cite></blockquote>
+      <blockquote class="card rv"><p>“They made my daughter's first visit fun. She now asks when we can go back. That says it all.”</p><cite>Meera and Arjun</cite></blockquote>
+    </div>
+  </div>
+</section>
+
+<section id="book" data-t="0,0.8,0.8,0.35" data-m="0,0,1,0.15">
+  <div class="wrap"><div class="cta">
+    <h2 class="rv">Ready for a smile you love?</h2>
+    <p class="rv">Book a consultation today. Same-week appointments are usually available.</p>
+    <a class="btn w rv" href="#contact">Book Appointment</a>
+  </div></div>
+</section>
+
+<section id="contact" data-t="0,0,0.5,0">
+  <div class="wrap two">
+    <div>
+      <h2 class="rv">Visit or call us.</h2>
+      <ul class="ci rv"><li><b>Address</b>24 Garden Lane, Central Avenue, Your City</li><li><b>Phone</b>+91 90000 00000</li><li><b>Hours</b>Mon to Sat, 10 am to 8 pm<br>Sun, 10 am to 2 pm</li><li><b>Emergency</b>Call anytime for urgent dental pain</li></ul>
+    </div>
+    <form class="card rv"><h3>Request an appointment</h3>
+      <label>Name<input required placeholder="Your full name"></label>
+      <label>Phone<input required type="tel" placeholder="Your phone number"></label>
+      <label>Treatment<select><option>Check-up</option><option>Implants</option><option>Whitening</option><option>Root canal</option><option>Braces &amp; aligners</option><option>Crowns</option></select></label>
+      <button class="btn" type="submit">Request Appointment</button>
+    </form>
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><span class="logo">Lumina Dental</span><span>© 2026 Lumina Dental Studio. Demo website.</span></div></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
